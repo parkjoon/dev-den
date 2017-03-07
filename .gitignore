@@ -1,3 +1,7 @@
+.env
+
+dev-den.lnk
+
 # Logs
 logs
 *.log
