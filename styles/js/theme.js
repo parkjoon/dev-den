@@ -1,7 +1,7 @@
 /*
 Name: 			Theme Base
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	5.5.0
+Theme Version:	5.6.0
 */
 
 // Theme
@@ -242,12 +242,20 @@ window.theme.fn = {
 
 			// Auto Height Fixes
 			if (this.options.autoHeight) {
+				var itemsHeight = [];
+
+				$el.find('.owl-item').each(function(){
+					if( $(this).hasClass('active') ) {
+						itemsHeight.push( $(this).height() );
+					}
+				});
+
 				$(window).afterResize(function() {
-					$el.find('.owl-stage-outer').height( $el.find('.owl-item.active').height() );
+					$el.find('.owl-stage-outer').height( Math.max.apply(null, itemsHeight) );
 				});
 
 				$(window).on('load', function() {
-					$el.find('.owl-stage-outer').height( $el.find('.owl-item.active').height() );
+					$el.find('.owl-stage-outer').height( Math.max.apply(null, itemsHeight) );
 				});
 			}
 

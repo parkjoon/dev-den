@@ -8,9 +8,7 @@ export default class App extends Component {
 		return (
 			<div className="body">
 				<Header />
-				<div className="main" role="main">
-					{React.cloneElement(this.props.children, this.propsToPass)}
-				</div>
+				{React.cloneElement(this.props.children, this.propsToPass)}
 				<Footer />
 			</div>
 		);

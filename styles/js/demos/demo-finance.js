@@ -1,7 +1,7 @@
 /*
 Name: 			Finance
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	5.5.0
+Theme Version:	5.6.0
 */
 // Demo Config
 (function($) {

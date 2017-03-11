@@ -1,7 +1,7 @@
 /*
 Plugin Name: 	BrowserSelector
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	5.5.0
+Theme Version:	5.6.0
 */
 
 (function($) {
@@ -259,7 +259,7 @@ Description: 	Simple jQuery plugin designed to emulate an 'after resize' event.
 /*
 Plugin Name: 	matchHeight
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	5.5.0
+Theme Version:	5.6.0
 
 Based on:
 
@@ -601,7 +601,7 @@ Based on:
 /*
 Plugin Name: 	jQuery.pin
 Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	5.5.0
+Theme Version:	5.6.0
 
 Based on:
 
