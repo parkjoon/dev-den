@@ -8,8 +8,8 @@
   "author": "Joon Park",
   "license": "UNLICENSED",
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/parkjoon/dev-den.git"
+    "type": "git",
+    "url": "https://github.com/parkjoon/dev-den.git"
   },
   "devDependencies": {
     "babel-core": "6.22.1",

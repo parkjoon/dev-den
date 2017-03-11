@@ -9,7 +9,28 @@ export default class Home extends Component {
 			<div role="main" className="main">
 				<Banner />
 
-				<section className="looking-for custom-position-1">
+				<div className="home-intro home-intro-primary" id="home-intro">
+					<div className="container">
+
+						<div className="row">
+							<div className="col-md-8">
+								<p>
+									The fastest way to grow your business with the leader in <em className="text-light">Technology</em>
+									<span className="text-light">Check out our options and features included.</span>
+								</p>
+							</div>
+							<div className="col-md-4">
+								<div className="get-started">
+									<a href="#" className="btn btn-lg btn-secondary">Get Started Now!</a>
+									<div className="learn-more text-light">or <a href="index.html" className="text-light">learn more.</a></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				{/* <section className="looking-for custom-position-1">
 					<div className="container custom-md-border-top">
 						<div className="row">
 							<div className="col-sm-6 col-md-8">
@@ -845,7 +866,7 @@ export default class Home extends Component {
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</div>
 		);
 	}
