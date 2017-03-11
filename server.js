@@ -1,14 +1,14 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var express = require('express');
+var path = require('path');
+var app = express();
 
-new WebpackDevServer(webpack(config), {
-	publicPath: config.output.publicPath,
-	historyApiFallback: true // Needed to work with react-router browserHistory.
-})
-.listen(3000, 'localhost', function (err, result) {
-	if(err) {
-		console.log(err);
-	}
-	console.log('Running at http://localhost:3000');
+// Define the port to run on
+app.set('port', 8080);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Listen for requests
+var server = app.listen(app.get('port'), function() {
+	var port = server.address().port;
+	console.log('Magic happens on port ' + port);
 });
