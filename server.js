@@ -7,6 +7,14 @@ app.set('port', 8080);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// The 404 Route (ALWAYS Keep this as the last route).
+app.get('*', function(req, res){
+	if (req.accepts('html')) {
+		res.send('404', '<script>location.href = "/404.html";</script>');
+		return;
+	}
+});
+
 // Listen for requests
 var server = app.listen(app.get('port'), function() {
 	var port = server.address().port;
