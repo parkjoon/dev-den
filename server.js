@@ -10,8 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // The 404 Route (ALWAYS Keep this as the last route).
 app.get('*', function(req, res){
 	if (req.accepts('html')) {
-		res.send('404', '<script>location.href = "/404.html";</script>');
-		return;
+		res.status(404).send('<script>location.href = "/404.html";</script>');
 	}
 });
 
