@@ -65,7 +65,7 @@ Theme Version:	5.6.0
 			disable_onmobile:"off"
 		}
 	}
-		
+
 	/*
 	* Slider Init
 	*/
@@ -79,7 +79,7 @@ Theme Version:	5.6.0
 	        scrollTop: $(".header-btn-collapse-nav").offset().top - 18
 	    }, 300);
 	});
-	
+
 	/*
 	* Isotope
 	*/
