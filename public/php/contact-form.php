@@ -13,7 +13,7 @@ header('Content-type: application/json');
 require_once('php-mailer/PHPMailerAutoload.php');
 
 // Step 1 - Enter your email address below.
-$email = 'you@domain.com';
+$email = 'joon@devden.io';
 
 // If the e-mail is not working, change the debug option to 2 | $debug = 2;
 $debug = 0;
@@ -60,8 +60,8 @@ try {
 	$mail->AddAddress($email);	 						       // Add another recipient
 
 	//$mail->AddAddress('person2@domain.com', 'Person 2');     // Add a secondary recipient
-	//$mail->AddCC('person3@domain.com', 'Person 3');          // Add a "Cc" address. 
-	//$mail->AddBCC('person4@domain.com', 'Person 4');         // Add a "Bcc" address. 
+	//$mail->AddCC('person3@domain.com', 'Person 3');          // Add a "Cc" address.
+	//$mail->AddBCC('person4@domain.com', 'Person 4');         // Add a "Bcc" address.
 
 	$mail->SetFrom($email, $_POST['name']);
 	$mail->AddReplyTo($_POST['email'], $_POST['name']);
