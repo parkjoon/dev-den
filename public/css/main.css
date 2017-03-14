@@ -612,10 +612,9 @@ header .logo a {
 	padding: 0;
 	outline: 0;
 	border: none;
-	width: 282px;
-	height: 72px;
-	background: url("../img/devden/logo-1.png") no-repeat center;
-	background-size: 289px 42px;
+	width: 370px;
+	height: 90px;
+	background: url("../img/devden/logo-4.png") no-repeat center;
 
 	font: 0/0 a;
 	text-shadow: none;
